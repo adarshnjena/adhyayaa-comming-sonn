@@ -1,0 +1,37 @@
+.ester_main {
+  width: 80vw;
+  margin: auto;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .ester_video {
+    width: 40vw;
+    height: 70%;
+    video {
+      width: 100%;
+    }
+  }
+  .stay_tuned {
+    width: 40vw;
+    height: 70%;
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 48px;
+      line-height: 55px;
+    }
+    h2 {
+      color: white;
+    }
+    .social_media {
+      display: flex;
+      margin: 10vh;
+      align-items: center;
+      justify-content: space-evenly;
+      box-icons {
+        font-size: 200vh;
+      }
+    }
+  }
+}

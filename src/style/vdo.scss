@@ -1,0 +1,27 @@
+.vdo {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.651);
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  overflow-y: hidden;
+  position: absolute;
+  box-icon {
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    cursor: pointer;
+  }
+  video {
+    position: absolute;
+    width: 70vw;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    @media only screen and (min-width: 300px) and (max-width: 900px) {
+      width: 95%;
+    }
+  }
+}
