@@ -7,6 +7,7 @@ function Vdo({ close, setClose }) {
           color="#ffffff"
           onClick={() => {
             setClose(!close);
+            
           }}
         ></box-icon>
         <video

@@ -1,3 +1,4 @@
+import Adhyaaya_app from "./components/adhyayaa_app";
 import EsterEgg from "./components/esterEgg";
 import Overlay from "./components/Overlay";
 import SoundCloud from "./components/soundCloud";
@@ -12,6 +13,7 @@ const App = () => {
       <SoundCloud></SoundCloud>
       <img src={logo} className="logo" />
       <EsterEgg></EsterEgg>
+      <Adhyaaya_app></Adhyaaya_app>
     </>
   );
 };
