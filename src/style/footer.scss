@@ -1,0 +1,18 @@
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .social_media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+  }
+  height: 20vh;
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+}

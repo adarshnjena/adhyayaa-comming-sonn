@@ -1,11 +1,20 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import gsap from "gsap";
 
 export default function Mobile({ ...props }) {
   const group = useRef();
+  let model_rotation = { xyz: [0, 4.2, 0] };
   const { nodes, materials } = useGLTF("models/mobile.glb");
+  useEffect(() => {}, model_rotation);
   return (
-    <group ref={group} {...props} dispose={null} scale={[1.2, 1.2, 1.2]}>
+    <group
+      ref={group}
+      {...props}
+      dispose={null}
+      scale={[1.2, 1.2, 1.2]}
+      rotation={model_rotation.xyz}
+    >
       <mesh
         geometry={nodes.Plane.geometry}
         material={materials["Material.006"]}

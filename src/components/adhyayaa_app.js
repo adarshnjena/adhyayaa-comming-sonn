@@ -5,11 +5,14 @@ import { Canvas } from "react-three-fiber";
 import Mobile from "./3D/Mobile";
 
 const Adhyaaya_app = () => {
-  const style = {
+  let style = {
     width: "30vw",
     height: "100vh",
-    // zIndex: "-1",
+    zIndex: "-1",
   };
+  if (document.documentElement.clientWidth < 900) {
+    style = { width: "90vw", height: "70vh", zIndex: "-1" };
+  }
   return (
     <div className="adhyayaa_app">
       <div className="appText">
@@ -25,7 +28,7 @@ const Adhyaaya_app = () => {
       </div>
       <Canvas style={style}>
         <ambientLight intensity={0.5} />
-        <OrbitControls></OrbitControls>
+        <spotLight intensity={0.3} position={(5, 10, 10)} />
         <Suspense fallback="null">
           <Mobile></Mobile>
         </Suspense>
